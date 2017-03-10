@@ -23,12 +23,13 @@
 4. Не забывайте добавлять комментарии к вашему коду.
 """
 
-
-a = int(input("Введите число: "))
-
-b = a ** 0.5
-
-print(b)
-print("Здравствуй мир")
-input()
+while True:
+    a = input("Введите число: ")
+    try:
+        b=int(a)
+        c = b ** 0.5
+        print(c)
+    except ValueError as err:
+        print(err)
+        continue
 
